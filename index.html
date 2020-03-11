@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.min.css" />
     <title>Task six</title>
   </head>
@@ -185,7 +189,7 @@
               role="button"
               aria-disabled="true"
             >
-              info check
+              info
             </a>
           </div>
         </div>
@@ -384,6 +388,188 @@ The cat was playing in the garden.
       <input type="button" value="primary" class="btn btn-outline-primary" />
       <input type="button" value="primary" class="btn btn-outline-warning" />
       <input type="button" value="primary" class="btn btn-outline-secondary" />
+      <br />
+      <br />
+      <hr />
+      <br />
+      <!-- form prototyping -->
+      <h2>initial form</h2>
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
+          <small id="emailHelp" class="form-text text-muted"
+            >We'll never share your email with anyone else.</small
+          >
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+          />
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <label class="form-check-label" for="exampleCheck1"
+            >Check me out</label
+          >
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <br />
+      <br />
+      <hr />
+      <br />
+      <br />
+      <h2>Form Control Selectbox</h2>
+      <select id="exampleFormControlSelect1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+      <br />
+      <br />
+      <hr />
+      <br />
+      <br />
+      <select class="form-control" id="exampleFormControlSelect1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+      <br />
+      <br />
+      <hr />
+      <br />
+      <br />
+      <h2>Example multiple select</h2>
+      <div class="form-group">
+        <label for="exampleFormControlSelect2">Example multiple select</label>
+        <select multiple id="exampleFormControlSelect2">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+        <br />
+        <br />
+        <hr />
+        <br />
+        <br />
+        <div class="form-group">
+          <label for="exampleFormControlSelect3">Example multiple select</label>
+          <select multiple class="form-control" id="exampleFormControlSelect3">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <br />
+        <br />
+        <hr />
+        <br />
+        <br />
+        <h2>Form Control Textarea</h2>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea4"
+            >exampleFormControlTextarea</label
+          >
+          <textarea id="exampleFormControlTextarea4" rows="3"></textarea>
+        </div>
+        <br />
+        <br />
+        <hr />
+        <br />
+        <br />
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1"
+            >exampleFormControlTextarea</label
+          >
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+          ></textarea>
+        </div>
+        <br />
+        <br />
+        <hr />
+        <br />
+        <br />
+        <h2>Example file input</h2>
+        <div class="form-group">
+          <label for="exampleFormControlFile1">Example file input</label>
+          <input
+            type="file"
+            class="form-control-file"
+            id="exampleFormControlFile1"
+          />
+        </div>
+      </div>
+      <br />
+      <br />
+      <hr />
+      <br />
+      <br />
+      <h2>form-control-sizing</h2>
+      <div class="form-control-sizing">
+        <input
+          class="form-control"
+          type="text"
+          placeholder=".form-control-lg"
+        />
+        <input class="form-control" type="text" placeholder="Default input" />
+        <input
+          class="form-control"
+          type="text"
+          placeholder=".form-control-sm"
+        />
+      </div>
+      <br />
+      <br />
+      <hr />
+      <br />
+      <br />
+      <div class="form-control-sizing">
+        <input
+          class="form-control form-control-lg"
+          type="text"
+          placeholder=".form-control-lg"
+        />
+        <input class="form-control" type="text" placeholder="Default input" />
+        <input
+          class="form-control form-control-sm"
+          type="text"
+          placeholder=".form-control-sm"
+        />
+      </div>
+      <br />
+      <br />
+      <hr />
+      <br />
+      <br />
+      <div class="bd-example">
+        <input
+          class="form-control"
+          type="text"
+          placeholder="Readonly input here..."
+          readonly
+        />
+      </div>
     </div>
     <script>
       const form = document.querySelector('form');
