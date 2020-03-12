@@ -1,0 +1,27 @@
+// set cursor pointer mixin
+@mixin cursor-pointer-mixin() {
+  [type='button'],
+  [type='reset'],
+  [type='submit'],
+  button {
+    &:not(:disabled) {
+      cursor: pointer;
+    }
+  }
+  fieldset {
+    &:disabled {
+      a {
+        &.btn {
+          pointer-events: none;
+        }
+      }
+    }
+  }
+  a {
+    &.btn {
+      &.disabled {
+        pointer-events: none;
+      }
+    }
+  }
+}

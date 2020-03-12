@@ -1,0 +1,37 @@
+// set btn text colors
+@function set-text-color($color, $cName) {
+  @if ($cName == 'link') {
+    @return $primary;
+  } @else if (lightness($color) > 70) {
+    @return $black;
+  } @else {
+    @return $white;
+  }
+}
+
+// set text decoration
+@function set-dec($cName) {
+  @if ($cName == 'link') {
+    @return underline;
+  } @else {
+    @return none;
+  }
+}
+
+// set text hover background color
+@function set-hover-bg-color($cName, $color) {
+  @if ($cName == 'link') {
+    @return $color;
+  } @else {
+    @return darken($color, 10%);
+  }
+}
+
+// set text hover color
+@function set-hover-text-color($cName, $color) {
+  @if ($cName == 'link') {
+    @return darken($primary, 10%);
+  } @else {
+    @return set-text-color($color, $cName);
+  }
+}

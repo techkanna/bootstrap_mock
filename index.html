@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="mystyles.min.css" />
     <link rel="stylesheet" href="style.min.css" />
     <title>Task six</title>
   </head>
@@ -562,6 +563,19 @@ The cat was playing in the garden.
       <hr />
       <br />
       <br />
+      <h2>Readonly</h2>
+      <div class="bd-example">
+        <input
+          class="form-control"
+          type="text"
+          placeholder="Readonly input here..."
+        />
+      </div>
+      <br />
+      <br />
+      <hr />
+      <br />
+      <br />
       <div class="bd-example">
         <input
           class="form-control"
@@ -569,6 +583,118 @@ The cat was playing in the garden.
           placeholder="Readonly input here..."
           readonly
         />
+      </div>
+      <br />
+      <br />
+      <hr />
+      <br />
+      <br />
+      <h2>form-control-plaintext</h2>
+      <div class="bd-example">
+        <input
+          type="text"
+          readonly=""
+          class="form-control-plaintext"
+          id="staticEmail"
+          value="email@example.com"
+        />
+      </div>
+      <br />
+      <br />
+      <hr />
+      <br />
+      <br />
+      <h2>form-control-range</h2>
+      <div class="bd-example">
+        <label for="formControlRange">Example Range input</label>
+        <input type="range" id="formControlRange" />
+      </div>
+      <div class="bd-example">
+        <label for="formControlRange">Example Range input</label>
+        <input type="range" class="form-control-range" id="formControlRange" />
+      </div>
+      <br />
+      <br />
+      <hr />
+      <br />
+      <br />
+      <h2>form-check-input</h2>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="defaultCheck2"
+          disabled=""
+        />
+        <label class="form-check-label" for="defaultCheck2">
+          Disabled checkbox
+        </label>
+      </div>
+      <br />
+      <br />
+      <hr />
+      <br />
+      <br />
+      <h2>form-check-inline</h2>
+      <div class="bd-example">
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="inlineCheckbox1"
+            value="option1"
+          />
+          <label class="form-check-label" for="inlineCheckbox1">1</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="inlineCheckbox2"
+            value="option2"
+          />
+          <label class="form-check-label" for="inlineCheckbox2">2</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="inlineCheckbox3"
+            value="option3"
+            disabled
+          />
+          <label class="form-check-label" for="inlineCheckbox3"
+            >3 (disabled)</label
+          >
+        </div>
+      </div>
+      <br />
+      <br />
+      <hr />
+      <br />
+      <br />
+      <h2>form-check-inline without lables</h2>
+      <div class="bd-example">
+        <div class="form-check">
+          <input
+            class="form-check-input position-static"
+            type="checkbox"
+            id="blankCheckbox"
+            value="option1"
+            aria-label="..."
+          />
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input position-static"
+            type="radio"
+            name="blankRadio"
+            id="blankRadio1"
+            value="option1"
+            aria-label="..."
+          />
+        </div>
       </div>
     </div>
     <script>

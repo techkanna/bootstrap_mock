@@ -10,5 +10,19 @@ $dark: #343a40;
 
 $white: #fff;
 $black: #212529;
+
 // text
 $btn-white-space: nowrap;
+
+// colors Obj for 🌍
+$theme-colors: (
+  'primary': $primary,
+  'secondary': $secondary,
+  'success': $success,
+  'danger': $danger,
+  'warning': $warning,
+  'info': $info,
+  'light': $light,
+  'dark': $dark,
+  'link': $white
+);

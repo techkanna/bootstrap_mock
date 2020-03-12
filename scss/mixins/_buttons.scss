@@ -1,0 +1,41 @@
+// set background colors for btn-*[colors]'s
+@mixin applyBtncolors() {
+  @each $cName, $color in $theme-colors {
+    .btn-#{$cName} {
+      background-color: $color;
+      color: set-text-color($color, $cName);
+      border-color: $color;
+
+      &:hover {
+        background-color: set-hover-bg-color($cName, $color);
+        color: set-hover-text-color($cName, $color);
+        text-decoration: set-dec($cName);
+      }
+      &:focus {
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem lighten($color, 10%);
+      }
+    }
+  }
+}
+
+// set background colors for btn-outline-*[colors]'s
+@mixin applyBtnOutlinecolors() {
+  @each $cName, $color in $theme-colors {
+    .btn-outline-#{$cName} {
+      background-color: $white;
+      color: $color;
+      border-color: $color;
+
+      &:hover {
+        background-color: darken($color, 10%);
+        color: set-text-color($color, $cName);
+      }
+
+      &:focus {
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem lighten($color, 10%);
+      }
+    }
+  }
+}
