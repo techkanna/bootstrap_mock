@@ -1,0 +1,13 @@
+.my-contain {
+  margin-top: 3rem;
+  .row {
+    // border: 1px solid rgb(133, 97, 97);
+    text-align: center;
+    margin-bottom: 1rem;
+    > [class*='col'] {
+      border: 1px solid rgb(76, 7, 85);
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+  }
+}

@@ -4,6 +4,7 @@
 @import 'rfs';
 
 // utilities
+@import 'mixins/breakpoints';
 @import 'mixins/hover';
 
 // for components
@@ -12,3 +13,7 @@
 
 // for skin
 @import 'mixins/cursor';
+
+// for layout
+@import 'mixins/gridFrames';
+@import 'mixins/grid';
