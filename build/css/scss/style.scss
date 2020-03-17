@@ -1,0 +1,33 @@
+header {
+  .container-flued {
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+      align-self: center;
+      .logo {
+        border: 1px solid red;
+        a {
+          font-size: 1.8rem;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+      ul {
+        border: 1px solid blue;
+        margin: 0;
+
+        li {
+          padding: 0 1rem;
+
+          a {
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
