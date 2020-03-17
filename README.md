@@ -7,4 +7,4 @@
 **Senthil Kannan**
 
 - <https://techkanna.com>
-- <https://github.com/techkanna/bootstrap_mock>
+- <https://github.com/techkanna/my_style_sheet>
